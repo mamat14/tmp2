@@ -1,0 +1,45 @@
+{
+  "name": "hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/chai": "^4.2.8",
+    "@types/express": "^4.17.2",
+    "@types/jest": "^25.1.1",
+    "@types/lru-cache": "^5.1.0",
+    "@types/supertest": "^2.0.8",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "nock": "^11.7.2",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest",
+    "testRegex": "(/test/.*|(\\.|/)(test|spec|e2e))\\.ts$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "comments": {
+    "devDependencies": {
+      "axios": "do not change version from 0.18.1. default params are not merged in other versions"
+    }
+  },
+  "dependencies": {
+    "lru-cache": "^5.1.1"
+  }
+}
